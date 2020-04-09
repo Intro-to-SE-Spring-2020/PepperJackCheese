@@ -63,7 +63,7 @@ export default class Main extends Component{
 
               <div className="form-group">
                 <label className="form-control-label">User:</label>
-                <input type="text" name="user" className="form-control" onChange={this.onChangeUser}></input>
+                <input type="text" name="user" className="form-control" value="user"></input>
               </div>
                 
               <div className="form-group">
