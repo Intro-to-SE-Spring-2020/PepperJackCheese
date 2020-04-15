@@ -75,7 +75,12 @@ export default class Main extends Component{
             <form  onSubmit={this.onSubmit}>
 
               <div className="form-group">
+<<<<<<< HEAD
               <label className="form-control-label">Usename:  {this.state.username}</label>
+=======
+                <label className="form-control-label">User:</label>
+                <input type="text" name="user" className="form-control" value="user"></input>
+>>>>>>> Caleb
               </div>
                 
               <div className="form-group">
@@ -91,6 +96,7 @@ export default class Main extends Component{
             </form>
 
             <Feed/>
+<<<<<<< HEAD
             
             
             
@@ -102,6 +108,9 @@ export default class Main extends Component{
           
           
             </div>
+=======
+          </div>
+>>>>>>> Caleb
         )
     }
 }

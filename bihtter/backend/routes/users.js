@@ -166,4 +166,23 @@ router.route('/logout').get((req,res,next) => {
 })
 
 
+<<<<<<< HEAD
 module.exports = router;
+=======
+router.route('/getUser').post((req,res) => {
+    const token = req.token_id;
+    var userID = ""
+    UserSession.find({
+        _id:token,
+        isDeleted:false
+    }, (err, sessions) => {
+        userID = UserSession.userID;
+    }
+    )
+    User.find({id:userID})
+        .then(username => res.json(User.username))
+        .catch(err => res.status(400).json('Error: ' + err));
+        return(res.json(User.username))
+})
+module.exports = router;
+>>>>>>> Caleb
